@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Devcon Industrial Solutions Website"
+version = "1.0.0"
+id = "artifacts/devcon-website"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18599
+
+[services.development]
+run = "pnpm --filter @workspace/devcon-website run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/devcon-website", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/devcon-website/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18599"
+BASE_PATH = "/"

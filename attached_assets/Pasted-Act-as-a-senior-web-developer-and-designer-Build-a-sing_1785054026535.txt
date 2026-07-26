@@ -1,0 +1,73 @@
+Act as a senior web developer and designer. Build a single-page, scroll-based 
+business website for an industrial automation dealer, using a classic, 
+trustworthy, traditional B2B design style.
+
+COMPANY: DEVCON INDUSTRIAL SOLUTIONS
+Location: GF-1, Plot No. 135,406/243, PDA Colony, Alto Porvorim, North Goa, Goa-403521
+Phone: +91 7738383322
+Email: devconsalesgoa@gmail.com
+GST No: 30AHLPR3428B1ZQ
+
+BRAND/THEME:
+- Use a navy blue (#1a3a6b or similar deep navy) and white color scheme
+- Clean, corporate, trustworthy feel — think established B2B industrial supplier, 
+  not a flashy startup
+- Circular emblem-style logo mark (I will provide the logo image separately)
+- Professional sans-serif typography, generous whitespace, clear section 
+  dividers
+
+STRUCTURE (single page, smooth-scroll navigation, sticky top nav bar):
+1. Header/Nav — Logo, company name, nav links to each section below, phone 
+   number and "Get a Quote" button visible in header
+2. Hero section — Company name, tagline "One-stop solution for industrial 
+   automation and instrumentation", short intro line, background using 
+   industrial/automation imagery, CTA button to Contact section
+3. About Us — Company history (founded by Mr. Deviprasad, 20+ years experience 
+   in automation, fluid and fluid power industry), mission statement, vision 
+   statement, industries served (food, pharma, printing, packaging, plastic, 
+   mining, metallurgy, electronics, engineering, medical, power, fertilizer, 
+   chemical, solar, etc.)
+4. Our Strengths — 7 strength points as an icon + text grid (technical support, 
+   compressed air management knowledge, authorised dealership, right-solution 
+   focus, sourcing capability, business ethics, quick response)
+5. Our Brands / Products — Present as distinct sub-sections or a tabbed/card 
+   layout, one card per brand:
+   - SMC Corporation (India) Pvt Ltd — pneumatic automation products (directional 
+     control valves, air cylinders, actuators, vacuum equipment, fittings, 
+     sensors, process valves, pumps, hydraulic/temperature control equipment, etc.)
+   - Darshana Industries Pvt Ltd — machine tool handles, locks, hinges, gaskets, 
+     conveyor accessories, aluminium section accessories, cable management systems
+   - Bray Controls — angle/butterfly/ball/check/knife-edge gate valves
+   - L&T Valves — flow control valves for oil & gas, power, petrochemicals, 
+     defence, aerospace
+   - Pennant Engineering Pvt Ltd — steam traps, pipeline accessories, flow 
+     control valves
+   - Industrial Power Transmission — vee belts, timing belts, flat belts, 
+     conveyor belts, PU belts/discs (brands: Mitsuboshi, Hutchinson, Megadyne, 
+     Nitta, Volta Belting, Steigentech)
+   Include placeholder image grids for each product category (I will supply 
+   real product images later)
+6. Custom Assemblies / Gallery — Showcase custom/indigenously developed work: 
+   15-station valve manifold for die casting machine, 10-station valve manifold 
+   for water purification, air pressure booster, jacketed ball valve with 
+   pneumatic actuator, dual stroke dual rod cylinder for Bobst machine, valve 
+   manifolds for Komori printing & blow moulding machines, pneumatic panel for 
+   paint booth systems. Use an image gallery/grid layout with captions.
+7. Contact Us — Address, phone, email, GST number, embedded Google Map, and a 
+   simple contact form (Name, Email, Phone, Message, Submit button)
+8. Footer — Company name, quick links, social icons (placeholders), copyright line
+
+TECHNICAL REQUIREMENTS:
+- Fully responsive (mobile, tablet, desktop)
+- Smooth scroll navigation between sections
+- Modern HTML/CSS/JS (or React if the tool defaults to it) — clean, semantic, 
+  well-commented code
+- Fast-loading, SEO-friendly meta tags (title, description) referencing 
+  "industrial automation Goa", "SMC dealer Goa", "pneumatic automation Porvorim"
+- Contact form should be functional or easily connectable to a form backend 
+  (e.g., Formspree)
+- Include subtle scroll animations/fade-ins for section reveals, nothing 
+  excessive
+
+Please generate the full website code now, structured cleanly with separate 
+sections/components so I can easily edit content and swap in real images later.
