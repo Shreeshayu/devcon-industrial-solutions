@@ -11,20 +11,53 @@ export default function Contact() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate Formspree submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      (e.target as HTMLFormElement).reset();
+
+    const formId = import.meta.env.VITE_FORMSPREE_ID;
+    if (!formId) {
       toast({
-        title: "Message Sent!",
-        description: "Thank you! We'll get back to you shortly.",
-        duration: 5000,
+        title: "Configuration Error",
+        description: "Form endpoint not configured. Please contact us directly by email.",
+        variant: "destructive",
+        duration: 6000,
       });
-    }, 1000);
+      setIsSubmitting(false);
+      return;
+    }
+
+    const form = e.target as HTMLFormElement;
+    const data = Object.fromEntries(new FormData(form));
+
+    try {
+      const res = await fetch(`https://formspree.io/f/${formId}`, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        form.reset();
+        toast({
+          title: "Message Sent!",
+          description: "Thank you! We'll get back to you within 24 hours.",
+          duration: 6000,
+        });
+      } else {
+        const json = await res.json().catch(() => ({}));
+        throw new Error((json as { error?: string }).error || 'Submission failed');
+      }
+    } catch (err) {
+      toast({
+        title: "Could not send message",
+        description: "Please try emailing us directly at devconsalesgoa@gmail.com",
+        variant: "destructive",
+        duration: 8000,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
