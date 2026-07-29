@@ -324,6 +324,9 @@ function BrandCard({ brand, onClick }: { brand: Brand; onClick: () => void }) {
       </div>
 
       <div className="p-5 flex flex-col flex-grow">
+        <span className="inline-flex items-center gap-1 mb-1.5 px-2 py-0.5 bg-green-50 text-green-700 border border-green-200 text-[10px] font-bold rounded uppercase tracking-wide w-fit">
+          ✓ Authorised Distributor
+        </span>
         <h3 className="text-lg font-bold text-primary mb-1 group-hover:text-accent transition-colors">{brand.name}</h3>
         <p className="text-accent font-semibold italic text-xs mb-4">{brand.tagline}</p>
         <div className="flex flex-wrap gap-1.5 mt-auto">

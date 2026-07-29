@@ -8,7 +8,7 @@ import {
 const industries = [
   { name: 'Food Processing', icon: UtensilsCrossed, color: 'bg-orange-50 text-orange-600 border-orange-200', img: 'https://images.unsplash.com/photo-1565118531796-763e5082d113?w=400&h=240&fit=crop&auto=format' },
   { name: 'Pharmaceuticals', icon: FlaskConical,    color: 'bg-blue-50 text-blue-600 border-blue-200',     img: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400&h=240&fit=crop&auto=format' },
-  { name: 'Printing',        icon: Printer,         color: 'bg-purple-50 text-purple-600 border-purple-200', img: 'https://images.unsplash.com/photo-1588421357574-87938a86fa28?w=400&h=240&fit=crop&auto=format' },
+  { name: 'Printing',        icon: Printer,         color: 'bg-purple-50 text-purple-600 border-purple-200', img: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&h=240&fit=crop&auto=format' },
   { name: 'Packaging',       icon: Package2,        color: 'bg-yellow-50 text-yellow-700 border-yellow-200', img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=400&h=240&fit=crop&auto=format' },
   { name: 'Plastics',        icon: Layers,          color: 'bg-teal-50 text-teal-600 border-teal-200',       img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=240&fit=crop&auto=format' },
   { name: 'Mining',          icon: Mountain,        color: 'bg-stone-50 text-stone-600 border-stone-200',    img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=240&fit=crop&auto=format' },
@@ -17,7 +17,7 @@ const industries = [
   { name: 'Medical',         icon: HeartPulse,      color: 'bg-rose-50 text-rose-600 border-rose-200',       img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=240&fit=crop&auto=format' },
   { name: 'Power Generation',icon: Zap,             color: 'bg-amber-50 text-amber-600 border-amber-200',    img: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&h=240&fit=crop&auto=format' },
   { name: 'Fertilizer',      icon: Leaf,            color: 'bg-green-50 text-green-600 border-green-200',    img: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&h=240&fit=crop&auto=format' },
-  { name: 'Chemical',        icon: TestTube2,       color: 'bg-cyan-50 text-cyan-600 border-cyan-200',       img: 'https://images.unsplash.com/photo-1616680214084-22670e69f08c?w=400&h=240&fit=crop&auto=format' },
+  { name: 'Chemical',        icon: TestTube2,       color: 'bg-cyan-50 text-cyan-600 border-cyan-200',       img: 'https://images.unsplash.com/photo-1565008576549-57569a49371d?w=400&h=240&fit=crop&auto=format' },
 ];
 
 export default function About() {
