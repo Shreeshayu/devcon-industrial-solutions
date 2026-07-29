@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative w-full min-h-[100dvh] flex flex-col items-center justify-center bg-primary overflow-hidden pt-20">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-industrial-pattern opacity-30"></div>
-      
+
       {/* Decorative gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary/50 via-transparent to-primary"></div>
 
@@ -27,7 +27,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white uppercase tracking-tight max-w-4xl leading-tight mb-6"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white uppercase tracking-tight whitespace-nowrap mb-6"
         >
           Devcon Industrial <span className="text-accent">Solutions</span>
         </motion.h1>
@@ -85,7 +85,7 @@ export default function Hero() {
         className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-black/20 backdrop-blur-sm py-4"
       >
         <div className="container mx-auto px-4 flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70">
-          {['SMC', 'Bray', 'L&T Valves', 'Pennant'].map((brand) => (
+          {['SMC', 'Bray', 'L&T Valves', 'Darshana'].map((brand) => (
             <div key={brand} className="text-white text-lg font-bold tracking-widest uppercase">
               {brand}
             </div>

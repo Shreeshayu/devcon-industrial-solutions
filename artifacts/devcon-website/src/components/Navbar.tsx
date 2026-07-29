@@ -32,9 +32,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold text-xl group-hover:bg-accent group-hover:text-primary transition-colors">
-              D
-            </div>
+            <img
+              src="/images/logo/devcon-logo.jpeg"
+              alt="Devcon Industrial Solutions"
+              className="w-10 h-10 rounded-full object-cover border-2 border-primary group-hover:border-accent transition-colors"
+            />
             <div className="flex flex-col">
               <span className="font-bold text-lg leading-tight tracking-tight text-primary uppercase">
                 Devcon
