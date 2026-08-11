@@ -1,23 +1,93 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 import {
-  UtensilsCrossed, FlaskConical, Printer, Package2, Layers, Mountain,
-  Flame, Cpu, HeartPulse, Zap, Leaf, TestTube2,
-} from 'lucide-react';
+  UtensilsCrossed,
+  FlaskConical,
+  Printer,
+  Package2,
+  Layers,
+  Mountain,
+  Flame,
+  Cpu,
+  HeartPulse,
+  Zap,
+  Leaf,
+  TestTube2,
+} from "lucide-react";
 
 const industries = [
-  { name: 'Food Processing', icon: UtensilsCrossed, color: 'bg-orange-50 text-orange-600 border-orange-200', img: 'https://images.unsplash.com/photo-1565118531796-763e5082d113?w=400&h=240&fit=crop&auto=format' },
-  { name: 'Pharmaceuticals', icon: FlaskConical,    color: 'bg-blue-50 text-blue-600 border-blue-200',     img: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400&h=240&fit=crop&auto=format' },
-  { name: 'Printing',        icon: Printer,         color: 'bg-purple-50 text-purple-600 border-purple-200', img: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&h=240&fit=crop&auto=format' },
-  { name: 'Packaging',       icon: Package2,        color: 'bg-yellow-50 text-yellow-700 border-yellow-200', img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=400&h=240&fit=crop&auto=format' },
-  { name: 'Plastics',        icon: Layers,          color: 'bg-teal-50 text-teal-600 border-teal-200',       img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=240&fit=crop&auto=format' },
-  { name: 'Mining',          icon: Mountain,        color: 'bg-stone-50 text-stone-600 border-stone-200',    img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=240&fit=crop&auto=format' },
-  { name: 'Metallurgy',      icon: Flame,           color: 'bg-red-50 text-red-600 border-red-200',          img: 'https://images.unsplash.com/photo-1524522173746-f628baad3644?w=400&h=240&fit=crop&auto=format' },
-  { name: 'Electronics',     icon: Cpu,             color: 'bg-indigo-50 text-indigo-600 border-indigo-200', img: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=240&fit=crop&auto=format' },
-  { name: 'Medical',         icon: HeartPulse,      color: 'bg-rose-50 text-rose-600 border-rose-200',       img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=240&fit=crop&auto=format' },
-  { name: 'Power Generation',icon: Zap,             color: 'bg-amber-50 text-amber-600 border-amber-200',    img: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&h=240&fit=crop&auto=format' },
-  { name: 'Fertilizer',      icon: Leaf,            color: 'bg-green-50 text-green-600 border-green-200',    img: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&h=240&fit=crop&auto=format' },
-  { name: 'Chemical',        icon: TestTube2,       color: 'bg-cyan-50 text-cyan-600 border-cyan-200',       img: 'https://images.unsplash.com/photo-1565008576549-57569a49371d?w=400&h=240&fit=crop&auto=format' },
+  {
+    name: "Food Processing",
+    icon: UtensilsCrossed,
+    color: "bg-orange-50 text-orange-600 border-orange-200",
+    img: "https://images.unsplash.com/photo-1663841365335-8acab127bf68?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Pharmaceuticals",
+    icon: FlaskConical,
+    color: "bg-blue-50 text-blue-600 border-blue-200",
+    img: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400&h=240&fit=crop&auto=format",
+  },
+  {
+    name: "Printing",
+    icon: Printer,
+    color: "bg-purple-50 text-purple-600 border-purple-200",
+    img: "https://images.unsplash.com/photo-1503694978374-8a2fa686963a?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Packaging",
+    icon: Package2,
+    color: "bg-yellow-50 text-yellow-700 border-yellow-200",
+    img: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=400&h=240&fit=crop&auto=format",
+  },
+  {
+    name: "Plastics",
+    icon: Layers,
+    color: "bg-teal-50 text-teal-600 border-teal-200",
+    img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=240&fit=crop&auto=format",
+  },
+  {
+    name: "Mining",
+    icon: Mountain,
+    color: "bg-stone-50 text-stone-600 border-stone-200",
+    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=240&fit=crop&auto=format",
+  },
+  {
+    name: "Metallurgy",
+    icon: Flame,
+    color: "bg-red-50 text-red-600 border-red-200",
+    img: "https://images.unsplash.com/photo-1600684249816-38cdfcf95c17?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Electronics",
+    icon: Cpu,
+    color: "bg-indigo-50 text-indigo-600 border-indigo-200",
+    img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=240&fit=crop&auto=format",
+  },
+  {
+    name: "Medical",
+    icon: HeartPulse,
+    color: "bg-rose-50 text-rose-600 border-rose-200",
+    img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=240&fit=crop&auto=format",
+  },
+  {
+    name: "Power Generation",
+    icon: Zap,
+    color: "bg-amber-50 text-amber-600 border-amber-200",
+    img: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&h=240&fit=crop&auto=format",
+  },
+  {
+    name: "Fertilizer",
+    icon: Leaf,
+    color: "bg-green-50 text-green-600 border-green-200",
+    img: "https://plus.unsplash.com/premium_photo-1664299647855-09045bcf5bf5?q=80&w=1852&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Chemical",
+    icon: TestTube2,
+    color: "bg-cyan-50 text-cyan-600 border-cyan-200",
+    img: "https://plus.unsplash.com/premium_photo-1661956660871-2cd646709c90?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
 ];
 
 export default function About() {
@@ -34,29 +104,37 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-6">
-              A Legacy of Engineering <span className="text-accent">Excellence</span>
+              A Legacy of Engineering{" "}
+              <span className="text-accent">Excellence</span>
             </h2>
             <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
               <p>
-                Founded by <strong>Mr. Deviprasad</strong>, Devcon Industrial Solutions is built on
-                <strong> 20+ years of deep expertise</strong> in automation, fluid, and fluid power
-                industries. We don't just sell components; we engineer solutions that keep plants
-                running efficiently.
+                Founded by <strong>Mr. Deviprasad</strong>, Devcon Industrial
+                Solutions is built on
+                <strong> 20+ years of deep expertise</strong> in automation,
+                fluid, and fluid power industries. We don't just sell
+                components; we engineer solutions that keep plants running
+                efficiently.
               </p>
 
               <div className="bg-white p-6 rounded-lg border-l-4 border-accent shadow-sm">
-                <h3 className="text-xl font-bold text-primary mb-2">Our Mission</h3>
+                <h3 className="text-xl font-bold text-primary mb-2">
+                  Our Mission
+                </h3>
                 <p className="text-base text-foreground/70">
-                  To be Goa's most trusted industrial automation partner by providing technically
-                  superior, highly reliable, and cost-effective engineering products.
+                  To be Goa's most trusted industrial automation partner by
+                  providing technically superior, highly reliable, and
+                  cost-effective engineering products.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg border-l-4 border-primary shadow-sm">
-                <h3 className="text-xl font-bold text-primary mb-2">Our Vision</h3>
+                <h3 className="text-xl font-bold text-primary mb-2">
+                  Our Vision
+                </h3>
                 <p className="text-base text-foreground/70">
-                  To empower manufacturers with the right engineering solutions, ensuring minimal
-                  downtime and maximum operational efficiency.
+                  To empower manufacturers with the right engineering solutions,
+                  ensuring minimal downtime and maximum operational efficiency.
                 </p>
               </div>
             </div>
@@ -72,14 +150,21 @@ export default function About() {
           >
             <div className="grid grid-cols-2 gap-4">
               {[
-                { label: 'Experience',       value: '20+ Years' },
-                { label: 'Authorised Brands', value: '4 Top Tier' },
-                { label: 'Industries Served', value: '12+' },
-                { label: 'Support',           value: 'Goa-Based' },
+                { label: "Experience", value: "20+ Years" },
+                { label: "Authorised Brands", value: "4 Top Tier" },
+                { label: "Industries Served", value: "12+" },
+                { label: "Support", value: "Goa-Based" },
               ].map((stat, i) => (
-                <div key={i} className="bg-primary text-white p-6 rounded-lg text-center flex flex-col justify-center shadow-md">
-                  <span className="text-3xl font-extrabold text-accent mb-1">{stat.value}</span>
-                  <span className="text-sm font-semibold uppercase tracking-wider">{stat.label}</span>
+                <div
+                  key={i}
+                  className="bg-primary text-white p-6 rounded-lg text-center flex flex-col justify-center shadow-md"
+                >
+                  <span className="text-3xl font-extrabold text-accent mb-1">
+                    {stat.value}
+                  </span>
+                  <span className="text-sm font-semibold uppercase tracking-wider">
+                    {stat.label}
+                  </span>
                 </div>
               ))}
             </div>
@@ -113,15 +198,20 @@ export default function About() {
                     alt={ind.name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).style.display = 'none';
+                      (e.currentTarget as HTMLImageElement).style.display =
+                        "none";
                     }}
                   />
                   <div className="absolute inset-0 bg-primary/30 group-hover:bg-primary/10 transition-colors" />
                 </div>
                 {/* Label + icon */}
-                <div className={`flex flex-col items-center text-center px-2 py-3 gap-1.5 ${ind.color} border-t`}>
+                <div
+                  className={`flex flex-col items-center text-center px-2 py-3 gap-1.5 ${ind.color} border-t`}
+                >
                   <ind.icon className="w-5 h-5" />
-                  <span className="text-xs font-bold leading-tight">{ind.name}</span>
+                  <span className="text-xs font-bold leading-tight">
+                    {ind.name}
+                  </span>
                 </div>
               </motion.div>
             ))}
