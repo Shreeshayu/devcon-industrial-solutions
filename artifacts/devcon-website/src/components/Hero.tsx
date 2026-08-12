@@ -27,7 +27,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white uppercase tracking-tight whitespace-nowrap mb-6"
+          className="className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white uppercase tracking-tight mb-6"
         >
           Devcon Industrial <span className="text-accent">Solutions</span>
         </motion.h1>
