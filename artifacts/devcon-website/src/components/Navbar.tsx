@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function Navbar() {
@@ -35,7 +35,7 @@ export default function Navbar() {
             <img
               src="/images/logo/devcon-logo.jpeg"
               alt="Devcon Industrial Solutions"
-              className="w-10 h-10 rounded-full object-cover border-2 border-primary group-hover:border-accent transition-colors"
+              className="w-14 h-14 rounded-full object-cover border-2 border-primary group-hover:border-accent transition-colors"
             />
             <div className="flex flex-col">
               <span className="font-bold text-lg leading-tight tracking-tight text-primary uppercase">
@@ -53,7 +53,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-semibold text-foreground hover:text-accent transition-colors"
+                className="text-base font-semibold text-foreground hover:text-accent transition-colors"
               >
                 {link.name}
               </a>
@@ -61,13 +61,21 @@ export default function Navbar() {
           </nav>
 
           {/* Right Actions */}
+          {/* Right Actions */}
           <div className="hidden lg:flex items-center gap-6">
-            <a
+            
               href="tel:+917738383322"
               className="flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors"
             >
               <Phone className="w-4 h-4" />
               +91 7738383322
+            </a>
+            
+              href="mailto:devconsalesgoa@gmail.com"
+              className="flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors"
+            >
+              <Mail className="w-4 h-4" />
+              devconsalesgoa@gmail.com
             </a>
             <Button
               asChild
