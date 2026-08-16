@@ -29,7 +29,7 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-4">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
             <img
@@ -48,7 +48,7 @@ export default function Navbar() {
           </a>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden xl:flex items-center gap-6 flex-shrink-0">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -61,7 +61,7 @@ export default function Navbar() {
           </nav>
 
           {/* Right Actions */}
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden xl:flex items-center gap-4 flex-shrink-0">
             <a
               href="tel:+917738383322"
               className="flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors"
@@ -86,7 +86,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="lg:hidden p-2 text-primary hover:text-accent transition-colors"
+            className="xl:hidden p-2 text-primary hover:text-accent transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -96,8 +96,7 @@ export default function Navbar() {
 
       {/* Mobile Nav Dropdown */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t border-border shadow-lg py-4 px-4 flex flex-col gap-4">
-          {navLinks.map((link) => (
+        <div className="xl:hidden absolute top-full left-0 right-0 bg-white border-t border-border shadow-lg py-4 px-4 flex flex-col gap-4">
             <a
               key={link.name}
               href={link.href}
