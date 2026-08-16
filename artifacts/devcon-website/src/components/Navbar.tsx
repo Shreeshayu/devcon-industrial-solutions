@@ -61,7 +61,6 @@ export default function Navbar() {
           </nav>
 
           {/* Right Actions */}
-          {/* Right Actions */}
           <div className="hidden lg:flex items-center gap-6">
             
               href="tel:+917738383322"
