@@ -97,6 +97,7 @@ export default function Navbar() {
       {/* Mobile Nav Dropdown */}
       {isMobileMenuOpen && (
         <div className="xl:hidden absolute top-full left-0 right-0 bg-white border-t border-border shadow-lg py-4 px-4 flex flex-col gap-4">
+          {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
