@@ -257,7 +257,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-bold text-primary">GST Number</h4>
                     <p className="text-foreground/70 font-mono">
-                      <strong>30AHLPR3428B1ZQ
+                      30AHLPR3428B1ZQ
                     </p>
                   </div>
                 </div>
@@ -268,14 +268,14 @@ export default function Contact() {
             {/* Map Embed */}
 <div className="w-full h-64 rounded-xl overflow-hidden border border-border shadow-sm">
   <iframe
-    src="https://www.google.com/maps?q=15.5262179,73.825926&z=17&output=embed"
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3844.222135936872!2d73.825926!3d15.526218000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc06cc5cf2f05%3A0xf9864e1dccfded63!2sDevcon%20Industrial%20Solutions!5e0!3m2!1sen!2sus!4v1787236738570!5m2!1sen!2sus"
     width="100%"
     height="100%"
     style={{ border: 0 }}
     allowFullScreen
     loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-    title="Devcon Office Location Map"
+    referrerPolicy="strict-origin-when-cross-origin"
+    title="Devcon Industrial Solutions Location"
   />
 </div>
           </motion.div>
