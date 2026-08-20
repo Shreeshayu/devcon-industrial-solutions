@@ -15,7 +15,7 @@ const strengths = [
   },
   {
     title: 'Authorised Dealership',
-    desc: 'Direct partnerships with global leaders like SMC, Bray, L&T, and Pennant guarantee genuine products.',
+    desc: 'Direct partnerships with global leaders like SMC, Bray and Darshana guarantee genuine products.',
     icon: BadgeCheck,
   },
   {
@@ -35,7 +35,7 @@ const strengths = [
   },
   {
     title: 'Quick Response & Delivery',
-    desc: 'Local Goa presence means rapid support and minimized downtime for your plant.',
+    desc: 'Quick sales and service support means minimized downtime for your plant.',
     icon: Truck,
   },
 ];
