@@ -202,7 +202,7 @@ export default function Contact() {
 
               <div className="space-y-6">
                 <a
-                  href="https://maps.google.com/?q=Alto+Porvorim+North+Goa"
+                  href="https://www.google.com/maps/place/Devcon+Industrial+Solutions/@15.5262231,73.8233511,17z/data=!3m1!4b1!4m6!3m5!1s0x3bbfc06cc5cf2f05:0xf9864e1dccfded63!8m2!3d15.5262179!4d73.825926!16s%2Fg%2F11tbz5b0p8?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-4 group"
@@ -267,7 +267,7 @@ export default function Contact() {
             {/* Map Embed */}
             <div className="w-full h-64 rounded-xl overflow-hidden border border-border shadow-sm">
               <iframe
-                src="https://maps.google.com/maps?q=Alto+Porvorim+North+Goa&output=embed"
+                src="https://www.google.com/maps/place/Devcon+Industrial+Solutions/@15.5262231,73.8233511,17z/data=!3m1!4b1!4m6!3m5!1s0x3bbfc06cc5cf2f05:0xf9864e1dccfded63!8m2!3d15.5262179!4d73.825926!16s%2Fg%2F11tbz5b0p8?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

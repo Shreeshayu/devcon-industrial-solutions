@@ -22,7 +22,7 @@ const assemblies = [
     images: ['/images/gallery/pneumatic-panel-paint-booth.jpeg'],
   },
   {
-    title: 'Jacketed Ball Valve',
+    title: 'Jacketed Ball Valve with pneumatic actuator for hot chocolate line',
     subtitle: 'With Pneumatic Actuator',
     images: [
       '/images/gallery/dual-stroke-cylinder-3.jpeg',
@@ -30,7 +30,7 @@ const assemblies = [
     ],
   },
   {
-    title: 'Dual Stroke Dual Rod Cylinder',
+    title: 'Dual Stroke Dual Rod Cylinder for Heidelberg XL 105 machine',
     subtitle: 'Bobst Machine',
     images: [
       '/images/gallery/custom-assembly-1.jpeg',
@@ -39,7 +39,7 @@ const assemblies = [
     ],
   },
   {
-    title: 'Valve Manifold',
+    title: 'Valve and air cylinders for Komori Lithrone printing machine',
     subtitle: 'Komori Printing Machine',
     images: [
       '/images/gallery/dual-stroke-cylinder-1.jpeg',
@@ -47,7 +47,7 @@ const assemblies = [
     ],
   },
   {
-    title: 'Valve Manifold',
+    title: 'Valve Manifold for water purification system',
     subtitle: 'Blow Moulding Machine',
     images: ['/images/gallery/valve-manifold-die-casting.jpeg'],
   },
@@ -60,7 +60,7 @@ const assemblies = [
     ],
   },
   {
-    title: 'Solenoid Valves & Air Cylinders',
+    title: 'Solenoid Valve assemblies for printing machine and blow moulding machine',
     subtitle: 'Komori Machine',
     images: [
       '/images/gallery/custom-assembly-3.jpeg',
