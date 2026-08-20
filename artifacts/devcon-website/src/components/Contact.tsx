@@ -265,18 +265,19 @@ export default function Contact() {
             </div>
 
             {/* Map Embed */}
-            <div className="w-full h-64 rounded-xl overflow-hidden border border-border shadow-sm">
-              <iframe
-                src="https://www.google.com/maps/place/Devcon+Industrial+Solutions/@15.5262231,73.8233511,17z/data=!3m1!4b1!4m6!3m5!1s0x3bbfc06cc5cf2f05:0xf9864e1dccfded63!8m2!3d15.5262179!4d73.825926!16s%2Fg%2F11tbz5b0p8?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen={false}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Devcon Office Location Map"
-              />
-            </div>
+            {/* Map Embed */}
+<div className="w-full h-64 rounded-xl overflow-hidden border border-border shadow-sm">
+  <iframe
+    src="https://www.google.com/maps?q=15.5262179,73.825926&z=17&output=embed"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Devcon Office Location Map"
+  />
+</div>
           </motion.div>
 
           {/* Quote Form */}
