@@ -20,7 +20,7 @@ export default function Hero() {
           className="mb-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-accent text-sm font-semibold uppercase tracking-wider"
         >
           <Settings className="w-4 h-4 animate-spin-slow" />
-          <span>Goa's Industrial Partner</span>
+          <span>Your Partner for Industrial Solutions</span>
         </motion.div>
 
         <motion.h1
@@ -29,7 +29,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white uppercase tracking-tight mb-6"
         >
-          Devcon Industrial <span className="text-accent">Solutions</span>
+          Devcon <span className="text-accent">Industrial Solutions</span>
         </motion.h1>
 
         <motion.h2
@@ -38,7 +38,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-xl md:text-2xl font-semibold text-gray-200 mb-6 max-w-3xl"
         >
-          One-stop solution for industrial automation and instrumentation
+          One-stop solution for industrial automation, instrumentation and fluid control
         </motion.h2>
 
         <motion.p
@@ -47,7 +47,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-base md:text-lg text-gray-300 max-w-2xl mb-10 leading-relaxed"
         >
-          Trusted by manufacturers across Goa and beyond for pneumatic automation, valve solutions, and power transmission expertise. Over 20 years of proven technical authority.
+          Trusted by customers in and around Goa for pneumatic automation, valve solutions, and power transmission expertise. Over 20 years of proven technical authority.
         </motion.p>
 
         <motion.div
@@ -85,7 +85,7 @@ export default function Hero() {
         className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-black/20 backdrop-blur-sm py-4"
       >
         <div className="container mx-auto px-4 flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70">
-          {['SMC', 'Bray', 'L&T Valves', 'Darshana'].map((brand) => (
+          {['SMC', 'Bray', 'Darshana'].map((brand) => (
             <div key={brand} className="text-white text-lg font-bold tracking-widest uppercase">
               {brand}
             </div>
