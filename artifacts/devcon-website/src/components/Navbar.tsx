@@ -62,14 +62,14 @@ export default function Navbar() {
 
                     {/* Right Actions */}
           <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
-            
+            <a
               href="tel:+917738383322"
               className="hidden xl:flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors whitespace-nowrap"
             >
               <Phone className="w-4 h-4" />
               +91 7738383322
             </a>
-            
+            <a
               href="mailto:devconsalesgoa@gmail.com"
               className="hidden xl:flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors whitespace-nowrap"
             >
