@@ -30,7 +30,6 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between gap-4">
-          {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
             <img
               src="/images/logo/devcon-logo.jpeg"
@@ -47,11 +46,9 @@ export default function Navbar() {
             </div>
           </a>
 
-          {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-6 flex-shrink-0">
             {navLinks.map((link) => (
-              
-                key={link.name}
+              <a key={link.name}
                 href={link.href}
                 className="text-base font-semibold text-foreground hover:text-accent transition-colors whitespace-nowrap"
               >
@@ -60,17 +57,14 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Right Actions */}
           <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
-            
-              href="tel:+917738383322"
+            <a href="tel:+917738383322"
               className="hidden xl:flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors whitespace-nowrap"
             >
               <Phone className="w-4 h-4" />
               +91 7738383322
             </a>
-            
-              href="mailto:devconsalesgoa@gmail.com"
+            <a href="mailto:devconsalesgoa@gmail.com"
               className="hidden xl:flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors whitespace-nowrap"
             >
               <Mail className="w-4 h-4" />
@@ -84,7 +78,6 @@ export default function Navbar() {
             </Button>
           </div>
 
-          {/* Mobile Menu Toggle */}
           <button
             className="lg:hidden p-2 text-primary hover:text-accent transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -94,12 +87,10 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Nav Dropdown */}
       {isMobileMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t border-border shadow-lg py-4 px-4 flex flex-col gap-4">
           {navLinks.map((link) => (
-            
-              key={link.name}
+            <a key={link.name}
               href={link.href}
               className="text-lg font-semibold text-foreground py-2 border-b border-muted"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -107,15 +98,13 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          
-            href="tel:+917738383322"
+          <a href="tel:+917738383322"
             className="flex items-center gap-2 text-lg font-semibold text-primary py-2"
           >
             <Phone className="w-5 h-5" />
             +91 7738383322
           </a>
-          
-            href="mailto:devconsalesgoa@gmail.com"
+          <a href="mailto:devconsalesgoa@gmail.com"
             className="flex items-center gap-2 text-lg font-semibold text-primary py-2"
           >
             <Mail className="w-5 h-5" />
