@@ -257,7 +257,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-bold text-primary">GST Number</h4>
                     <p className="text-foreground/70 font-mono">
-                      30AHLPR3428B1ZQ
+                      <strong>30AHLPR3428B1ZQ
                     </p>
                   </div>
                 </div>
