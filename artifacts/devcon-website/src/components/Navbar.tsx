@@ -29,7 +29,7 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex items-center justify-between gap-6 xl:gap-10">
           <a href="#" className="flex items-center gap-3 group">
             <img
               src="/images/logo/devcon-logo.jpeg"
@@ -46,7 +46,7 @@ export default function Navbar() {
             </div>
           </a>
 
-          <nav className="hidden lg:flex items-center gap-4 flex-shrink-0">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-8 flex-shrink-0">
             {navLinks.map((link) => (
               <a key={link.name}
                 href={link.href}
@@ -57,17 +57,17 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
+          <div className="hidden lg:flex items-center gap-4 xl:gap-6 flex-shrink-0">
             <a href="tel:+917738383322"
-              className="hidden lg:flex items-center gap-2 text-xs font-semibold text-primary hover:text-accent transition-colors whitespace-nowrap"
+              className="hidden lg:flex items-center gap-2 text-sm font-bold text-primary hover:text-accent transition-colors whitespace-nowrap"
             >
-              <Phone className="w-4 h-4" />
+              <Phone className="w-5 h-5" />
               +91 7738383322
             </a>
             <a href="mailto:devconsalesgoa@gmail.com"
-              className="hidden lg:flex items-center gap-2 text-xs font-semibold text-primary hover:text-accent transition-colors whitespace-nowrap"
+              className="hidden lg:flex items-center gap-2 text-sm font-bold text-primary hover:text-accent transition-colors whitespace-nowrap"
             >
-              <Mail className="w-4 h-4" />
+              <Mail className="w-5 h-5" />
               devconsalesgoa@gmail.com
             </a>
             <Button
