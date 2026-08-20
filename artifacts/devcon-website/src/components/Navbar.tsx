@@ -28,7 +28,7 @@ export default function Navbar() {
         isScrolled ? 'shadow-md py-3' : 'py-5 shadow-sm'
       }`}
     >
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="w-full px-6 xl:px-12">
         <div className="flex items-center justify-between gap-6 xl:gap-10">
           <a href="#" className="flex items-center gap-3 group">
             <img
