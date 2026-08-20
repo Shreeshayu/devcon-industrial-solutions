@@ -35,41 +35,41 @@ export default function Navbar() {
             <img
               src="/images/logo/devcon-logo.jpeg"
               alt="Devcon Industrial Solutions"
-              className="w-14 h-14 rounded-full object-cover border-2 border-primary group-hover:border-accent transition-colors"
+              className="w-16 h-16 rounded-full object-cover border-2 border-primary group-hover:border-accent transition-colors"
             />
             <div className="flex flex-col">
-              <span className="font-bold text-lg leading-tight tracking-tight text-primary uppercase">
+              <span className="font-bold text-xl leading-tight tracking-tight text-primary uppercase">
                 Devcon
               </span>
-              <span className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider">
+              <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
                 Industrial Solutions
               </span>
             </div>
           </a>
 
           {/* Desktop Nav */}
-                    <nav className="hidden lg:flex items-center gap-5 flex-shrink-0">
+          <nav className="hidden lg:flex items-center gap-6 flex-shrink-0">
             {navLinks.map((link) => (
-              <a
+              
                 key={link.name}
                 href={link.href}
-                                className="text-sm font-semibold text-foreground hover:text-accent transition-colors whitespace-nowrap"
+                className="text-base font-semibold text-foreground hover:text-accent transition-colors whitespace-nowrap"
               >
                 {link.name}
               </a>
             ))}
           </nav>
 
-                    {/* Right Actions */}
-          <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
-            <a
+          {/* Right Actions */}
+          <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
+            
               href="tel:+917738383322"
               className="hidden xl:flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors whitespace-nowrap"
             >
               <Phone className="w-4 h-4" />
               +91 7738383322
             </a>
-            <a
+            
               href="mailto:devconsalesgoa@gmail.com"
               className="hidden xl:flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors whitespace-nowrap"
             >
@@ -78,7 +78,7 @@ export default function Navbar() {
             </a>
             <Button
               asChild
-              className="bg-primary text-white border-2 border-accent hover:bg-accent hover:text-primary transition-all font-bold"
+              className="bg-primary text-white border-2 border-accent hover:bg-accent hover:text-primary transition-all font-bold whitespace-nowrap"
             >
               <a href="#contact">Get a Quote</a>
             </Button>
@@ -86,7 +86,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Toggle */}
           <button
-                        className="lg:hidden p-2 text-primary hover:text-accent transition-colors"
+            className="lg:hidden p-2 text-primary hover:text-accent transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -96,9 +96,9 @@ export default function Navbar() {
 
       {/* Mobile Nav Dropdown */}
       {isMobileMenuOpen && (
-                <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t border-border shadow-lg py-4 px-4 flex flex-col gap-4">
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t border-border shadow-lg py-4 px-4 flex flex-col gap-4">
           {navLinks.map((link) => (
-            <a
+            
               key={link.name}
               href={link.href}
               className="text-lg font-semibold text-foreground py-2 border-b border-muted"
@@ -107,12 +107,19 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <a
+          
             href="tel:+917738383322"
             className="flex items-center gap-2 text-lg font-semibold text-primary py-2"
           >
             <Phone className="w-5 h-5" />
             +91 7738383322
+          </a>
+          
+            href="mailto:devconsalesgoa@gmail.com"
+            className="flex items-center gap-2 text-lg font-semibold text-primary py-2"
+          >
+            <Mail className="w-5 h-5" />
+            devconsalesgoa@gmail.com
           </a>
           <Button asChild className="w-full bg-primary text-white font-bold mt-2">
             <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
