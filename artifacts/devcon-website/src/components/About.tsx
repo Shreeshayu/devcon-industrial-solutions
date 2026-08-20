@@ -122,7 +122,7 @@ export default function About() {
                   Our Mission
                 </h3>
                 <p className="text-base text-foreground/70">
-                  To be Goa's most trusted industrial automation partner by
+                  To be the most trusted industrial automation partner by
                   providing technically superior, highly reliable, and
                   cost-effective engineering products.
                 </p>
@@ -151,8 +151,8 @@ export default function About() {
             <div className="grid grid-cols-2 gap-4">
               {[
                 { label: "Experience", value: "20+ Years" },
-                { label: "Authorised Brands", value: "4 Top Tier" },
-                { label: "Industries Served", value: "12+" },
+                { label: "Authorised Brands", value: "3 Top Tier" },
+                { label: "Industries Served", value: "24" },
                 { label: "Support", value: "Goa-Based" },
               ].map((stat, i) => (
                 <div
