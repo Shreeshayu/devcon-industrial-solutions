@@ -36,7 +36,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-xl md:text-2xl font-semibold text-gray-200 mb-6 max-w-3xl"
+          className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-200 mb-6 max-w-4xl whitespace-normal lg:whitespace-nowrap"
         >
           One-stop solution for industrial automation, instrumentation and fluid control
         </motion.h2>
