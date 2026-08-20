@@ -153,7 +153,7 @@ export default function About() {
                 { label: "Experience", value: "20+ Years" },
                 { label: "Authorised Brands", value: "3 Top Tier" },
                 { label: "Industries Served", value: "24" },
-                { label: "Support", value: "Goa-Based" },
+                
               ].map((stat, i) => (
                 <div
                   key={i}
