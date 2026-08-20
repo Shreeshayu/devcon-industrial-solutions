@@ -48,30 +48,30 @@ export default function Navbar() {
           </a>
 
           {/* Desktop Nav */}
-          <nav className="hidden xl:flex items-center gap-6 flex-shrink-0">
+                    <nav className="hidden lg:flex items-center gap-5 flex-shrink-0">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-base font-semibold text-foreground hover:text-accent transition-colors"
+                                className="text-sm font-semibold text-foreground hover:text-accent transition-colors whitespace-nowrap"
               >
                 {link.name}
               </a>
             ))}
           </nav>
 
-          {/* Right Actions */}
-          <div className="hidden xl:flex items-center gap-4 flex-shrink-0">
-            <a
+                    {/* Right Actions */}
+          <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
+            
               href="tel:+917738383322"
-              className="flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors"
+              className="hidden xl:flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors whitespace-nowrap"
             >
               <Phone className="w-4 h-4" />
               +91 7738383322
             </a>
-            <a
+            
               href="mailto:devconsalesgoa@gmail.com"
-              className="flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors"
+              className="hidden xl:flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors whitespace-nowrap"
             >
               <Mail className="w-4 h-4" />
               devconsalesgoa@gmail.com
@@ -86,7 +86,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="xl:hidden p-2 text-primary hover:text-accent transition-colors"
+                        className="lg:hidden p-2 text-primary hover:text-accent transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -96,7 +96,7 @@ export default function Navbar() {
 
       {/* Mobile Nav Dropdown */}
       {isMobileMenuOpen && (
-        <div className="xl:hidden absolute top-full left-0 right-0 bg-white border-t border-border shadow-lg py-4 px-4 flex flex-col gap-4">
+                <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t border-border shadow-lg py-4 px-4 flex flex-col gap-4">
           {navLinks.map((link) => (
             <a
               key={link.name}
