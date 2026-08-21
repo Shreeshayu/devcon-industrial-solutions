@@ -59,7 +59,7 @@ export default function Hero() {
           <Button
             asChild
             size="lg"
-            className="bg-accent text-primary hover:bg-white transition-colors text-base font-bold h-14 px-8"
+            className="bg-gradient-to-r from-accent to-accent/70 text-white hover:shadow-lg hover:shadow-accent/40 hover:-translate-y-0.5 transition-all duration-300 text-base font-bold h-14 px-8"
           >
             <a href="#brands">
               Explore Our Solutions

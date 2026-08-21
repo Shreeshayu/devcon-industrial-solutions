@@ -117,7 +117,7 @@ export default function About() {
                 efficiently.
               </p>
 
-              <div className="bg-white p-6 rounded-lg border-l-4 border-accent shadow-sm">
+              <div className="bg-white p-6 rounded-lg border-l-4 border-accent shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                 <h3 className="text-xl font-bold text-primary mb-2">
                   Our Mission
                 </h3>
@@ -128,7 +128,7 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg border-l-4 border-primary shadow-sm">
+              <div className="bg-white p-6 rounded-lg border-l-4 border-primary shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                 <h3 className="text-xl font-bold text-primary mb-2">
                   Our Vision
                 </h3>
@@ -157,7 +157,7 @@ export default function About() {
               ].map((stat, i) => (
                 <div
                   key={i}
-                  className="bg-primary text-white p-6 rounded-lg text-center flex flex-col justify-center shadow-md"
+                  className="bg-primary text-white p-6 rounded-lg text-center flex flex-col justify-center shadow-md hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
                 >
                   <span className="text-3xl font-extrabold text-accent mb-1">
                     {stat.value}
