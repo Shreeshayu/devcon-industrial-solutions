@@ -79,7 +79,7 @@ html {
   --sidebar: 0 0% 100%;
   --sidebar-foreground: 240 28% 14%;
   --sidebar-border: 220 14% 90%;
-  --sidebar-primary: 207 45% 33%;
+  --sidebar-primary: 209 64% 16%;
   --sidebar-primary-foreground: 0 0% 100%;
   --sidebar-accent: 220 14% 97%;
   --sidebar-accent-foreground: 240 28% 14%;
@@ -90,7 +90,7 @@ html {
   --popover-border: 220 14% 90%;
 
   /* Navy: #1a3a6b */
-  --primary: 207 45% 33%;
+  --primary: 209 64% 16%;
   --primary-foreground: 0 0% 100%;
 
   /* Light gray: #f5f6f8 */
@@ -101,17 +101,17 @@ html {
   --muted-foreground: 240 10% 45%;
 
   /* Accent gold: #c8a84b */
-  --accent: 205 55% 55%;
+  --accent: 45 52% 54%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
   --input: 220 14% 90%;
-  --ring: 207 45% 33%;
+  --ring: 209 64% 16%;
   
-  --chart-1: 207 45% 33%;
-  --chart-2: 205 55% 55%;
+  --chart-1: 209 64% 16%;
+  --chart-2: 45 52% 54%;
   --chart-3: 240 28% 14%;
   --chart-4: 220 14% 60%;
   --chart-5: 210 20% 80%;
@@ -154,7 +154,7 @@ html {
   --sidebar: 0 0% 100%;
   --sidebar-foreground: 240 28% 14%;
   --sidebar-border: 220 14% 90%;
-  --sidebar-primary: 207 45% 33%;
+  --sidebar-primary: 209 64% 16%;
   --sidebar-primary-foreground: 0 0% 100%;
   --sidebar-accent: 220 14% 97%;
   --sidebar-accent-foreground: 240 28% 14%;
@@ -164,7 +164,7 @@ html {
   --popover-foreground: 240 28% 14%;
   --popover-border: 220 14% 90%;
 
-  --primary: 207 45% 33%;
+  --primary: 209 64% 16%;
   --primary-foreground: 0 0% 100%;
 
   --secondary: 220 14% 97%;
@@ -173,17 +173,17 @@ html {
   --muted: 220 14% 97%;
   --muted-foreground: 240 10% 45%;
 
-  --accent: 205 55% 55%;
+  --accent: 45 52% 54%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
   --input: 220 14% 90%;
-  --ring: 207 45% 33%;
+  --ring: 209 64% 16%;
   
-  --chart-1: 207 45% 33%;
-  --chart-2: 205 55% 55%;
+  --chart-1: 209 64% 16%;
+  --chart-2: 45 52% 54%;
   --chart-3: 240 28% 14%;
   --chart-4: 220 14% 60%;
   --chart-5: 210 20% 80%;
@@ -201,6 +201,109 @@ html {
 
 /* Add an industrial pattern for the hero background */
 .bg-industrial-pattern {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-  background-size: 32px 32px;
+  background-color: #f4f6fa;
+  background-image:
+    linear-gradient(
+      30deg,
+      transparent 46%,
+      rgba(54, 86, 130, 0.1) 47%,
+      rgba(54, 86, 130, 0.1) 49%,
+      transparent 50%
+    ),
+    linear-gradient(
+      150deg,
+      transparent 46%,
+      rgba(54, 86, 130, 0.1) 47%,
+      rgba(54, 86, 130, 0.1) 49%,
+      transparent 50%
+    );
+  background-size: 100px 88px;
+}
+/* =========================================
+   HERO BACKGROUND PATTERN
+========================================= */
+
+.hero-pattern {
+  background-color: #f4f5f7;
+
+  background-image:
+    linear-gradient(
+      30deg,
+      transparent 49%,
+      rgba(44, 77, 122, 0.09) 50%,
+      transparent 51%
+    ),
+    linear-gradient(
+      150deg,
+      transparent 49%,
+      rgba(44, 77, 122, 0.09) 50%,
+      transparent 51%
+    );
+
+  background-size: 200px 140px;
+}
+
+
+/* =========================================
+   FACTORY IMAGE
+========================================= */
+
+.hero-factory-image {
+  width: 62%;
+}
+
+
+/* =========================================
+   ANGLED WHITE PANEL
+========================================= */
+
+.hero-angle-panel {
+  left: 42%;
+  width: 32%;
+
+  background: #f4f5f7;
+
+  clip-path: polygon(
+    0 0,
+    38% 0,
+    100% 100%,
+    0 100%
+  );
+}
+
+
+/* =========================================
+   GOLD DIAGONAL LINE
+========================================= */
+
+.hero-gold-diagonal {
+  top: -5%;
+  left: 42.5%;
+
+  width: 2px;
+  height: 115%;
+
+  background: #d4ad53;
+
+  transform: rotate(17deg);
+  transform-origin: top;
+}
+.hero-pattern {
+  background-image:
+    linear-gradient(
+      45deg,
+      transparent 48%,
+      rgba(41, 75, 120, 0.08) 49%,
+      rgba(41, 75, 120, 0.08) 51%,
+      transparent 52%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 48%,
+      rgba(41, 75, 120, 0.08) 49%,
+      rgba(41, 75, 120, 0.08) 51%,
+      transparent 52%
+    );
+
+  background-size: 140px 140px;
 }

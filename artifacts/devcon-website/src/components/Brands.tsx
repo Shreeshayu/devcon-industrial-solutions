@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, X, ChevronDown } from 'lucide-react';
-
 interface Brand {
   id: string;
   name: string;
+  logo: string;
   tagline: string;
   description: string;
   website?: string;
@@ -14,43 +14,45 @@ interface Brand {
 
 const brands: Brand[] = [
   {
-    id: 'smc',
-    name: 'SMC Corporation (India) Pvt Ltd',
-    tagline: 'World\'s No.1 Pneumatic Automation Brand',
-    description:
-      'SMC Corporation is the global leader in pneumatic automation, holding approximately 30% of the world market share. Founded in Japan in 1959, SMC manufactures over 12,000 product series and 700,000+ product variations. As an authorised dealer in Goa, Devcon Industrial Solutions supplies and supports the complete SMC range — from basic fittings to complex multi-axis pneumatic systems — backed by expert technical support and genuine spare parts.',
-    tags: [
-      'Directional Control Valves',
-      'Air Cylinders',
-      'Rotary Actuators',
-      'Electric Actuators',
-      'Vacuum Equipment',
-      'Air Preparation / FRL',
-      'Pressure Control',
-      'Fittings & Tubing',
-      'Switches / Sensors',
-      'Process Valves',
-      'Diaphragm Pumps',
-      'Hydraulic Equipment',
-    ],
-    images: [
-      { src: '/images/smc/directional-control-valves.jpeg', label: 'Directional Control Valves' },
-      { src: '/images/smc/air-cylinders.jpeg', label: 'Air Cylinders' },
-      { src: '/images/smc/rotary-actuators.jpeg', label: 'Rotary Actuators / Air Grippers' },
-      { src: '/images/smc/electric-actuators.jpeg', label: 'Electric Actuators / Cylinders' },
-      { src: '/images/smc/vacuum-equipment.jpeg', label: 'Vacuum Equipment' },
-      { src: '/images/smc/air-preparation.jpeg', label: 'Air Preparation Equipment' },
-      { src: '/images/smc/pressure-control.jpeg', label: 'Modular F.R.L. / Pressure Control' },
-      { src: '/images/smc/fittings-tubing.jpeg', label: 'Fittings & Tubing' },
-      { src: '/images/smc/sensors.jpeg', label: 'Switches / Sensors / Controllers' },
-      { src: '/images/smc/process-valves.jpeg', label: 'Process Valves' },
-      { src: '/images/smc/process-pumps.jpeg', label: 'Process Pumps (Diaphragm)' },
-      { src: '/images/smc/hydraulic.jpeg', label: 'Hydraulic Equipment' },
-    ],
-  },
+  id: 'smc',
+  name: 'SMC Corporation (India) Pvt Ltd',
+  logo: '/images/logo/smc.png',
+  tagline: 'World\'s No.1 Pneumatic Automation Brand',
+  description:
+    'SMC Corporation is the global leader in pneumatic automation, holding approximately 30% of the world market share. Founded in Japan in 1959, SMC manufactures over 12,000 product series and 700,000+ product variations. As an authorised dealer in Goa, Devcon Industrial Solutions supplies and supports the complete SMC range — from basic fittings to complex multi-axis pneumatic systems — backed by expert technical support and genuine spare parts.',
+  tags: [
+    'Directional Control Valves',
+    'Air Cylinders',
+    'Rotary Actuators',
+    'Electric Actuators',
+    'Vacuum Equipment',
+    'Air Preparation / FRL',
+    'Pressure Control',
+    'Fittings & Tubing',
+    'Switches / Sensors',
+    'Process Valves',
+    'Diaphragm Pumps',
+    'Hydraulic Equipment',
+  ],
+  images: [
+  { src: '/images/smc/1.png', label: 'Directional Control Valves' },
+  { src: '/images/smc/2.png', label: 'Air Cylinders' },
+  { src: '/images/smc/3.png', label: 'Rotary Actuators / Air Grippers' },
+  { src: '/images/smc/4.png', label: 'Electric Actuators / Cylinders' },
+  { src: '/images/smc/5.png', label: 'Vacuum Equipment' },
+  { src: '/images/smc/6.png', label: 'Air Preparation Equipment' },
+  { src: '/images/smc/7.png', label: 'Modular F.R.L. / Pressure Control' },
+  { src: '/images/smc/8.png', label: 'Fittings & Tubing' },
+  { src: '/images/smc/9.png', label: 'Switches / Sensors / Controllers' },
+  { src: '/images/smc/10.png', label: 'Process Valves' },
+  { src: '/images/smc/11.png', label: 'Process Pumps (Diaphragm)' },
+  { src: '/images/smc/12.png', label: 'Hydraulic Equipment' },
+],
+},
   {
     id: 'darshana',
     name: 'Darshana Industries Pvt Ltd',
+    logo: '/images/logo/darshana.png',
     tagline: 'Machine Tool Accessories & Hardware',
     description:
       'Darshana Industries is a leading Indian manufacturer of machine tool accessories, panel hardware, and industrial accessories. Their extensive catalogue covers everything from cabinet hinges and panel locks to conveyor components and aluminium profile accessories — all designed to meet demanding industrial standards.',
@@ -65,7 +67,7 @@ const brands: Brand[] = [
       'Console Accessories',
       'Support Arm Systems',
     ],
-    images: [
+        images: [
       { src: '/images/darshana/handles.jpeg', label: 'Handles' },
       { src: '/images/darshana/locks.jpeg', label: 'Locks' },
       { src: '/images/darshana/three-point-locks.jpeg', label: '3-Point Locks' },
@@ -82,29 +84,30 @@ const brands: Brand[] = [
     ],
   },
   {
-    id: 'bray',
-    name: 'Bray Controls',
-    tagline: 'Advanced Valve & Actuator Solutions',
-    description:
-      'Bray International is a globally recognised manufacturer of flow control products — valves, actuators, and accessories. Known for precision engineering and durability in demanding industrial environments, Bray valves are deployed across water treatment, chemical, food & beverage, HVAC, and industrial process sectors.',
-    tags: [
-      'Butterfly Valves',
-      'Ball Valves',
-      'Check Valves',
-      'Angle Valves',
-      'Knife-edge Gate Valves',
-      'Pneumatic Actuators',
-      'Electric Actuators',
-    ],
-    images: [
-      { src: '/images/lt/valve-1.jpeg', label: 'Butterfly Valves' },
-      { src: '/images/bray/valve-2.jpeg', label: 'Butterfly Valve — Actuated' },
-      { src: '/images/bray/valve-3.jpeg', label: 'Butterfly Valve — High Performance' },
-      { src: '/images/bray/valve-4.jpeg', label: 'Angle / Check Valve' },
-      { src: '/images/bray/valve-5.jpeg', label: 'Ball Valve with Actuator' },
-      { src: '/images/bray/valve-6.jpeg', label: 'Ball / Check Valve' },
-    ],
-  },
+  id: 'bray',
+  name: 'Bray Controls',
+  logo: '/images/logo/bray.png',
+  tagline: 'Advanced Valve & Actuator Solutions',
+  description:
+    'Bray International is a globally recognised manufacturer of flow control products — valves, actuators, and accessories. Known for precision engineering and durability in demanding industrial environments, Bray valves are deployed across water treatment, chemical, food & beverage, HVAC, and industrial process sectors.',
+  tags: [
+    'Butterfly Valves',
+    'Ball Valves',
+    'Check Valves',
+    'Angle Valves',
+    'Knife-edge Gate Valves',
+    'Pneumatic Actuators',
+    'Electric Actuators',
+  ],
+  images: [
+    { src: 'https://www.bray.com/images/default-source/products/resilientseatedvalves/s30-31/s30-31_homehero_04-copy.webp', label: 'Resilient Seated Butterfly Valve — Series 30/31' },
+    { src: 'https://www.bray.com/images/default-source/products/resilientseatedvalves/s30-31/30-31-2-min.webp', label: 'Butterfly Valve — Internal Features' },
+    { src: 'https://www.bray.com/images/default-source/products/trilok/tri-lok/f0-1000-110ez_thumbnail_.webp', label: 'Triple Offset Butterfly Valve — Tri Lok®' },
+    { src: 'https://www.bray.com/images/default-source/products/mccannalok/s40-s41/s40-sideopenother_test01thumbnail-3.webp', label: 'High Performance Butterfly Valve — McCannalok™' },
+    { src: 'https://www.bray.com/images/default-source/products/flow-tek/s7000-s8000/s7000-2in-braythumb-5-copy.webp', label: '3-Piece Ball Valve — Series 7000/8000' },
+    { src: 'https://www.bray.com/images/default-source/products/flow-tek/f15-f30/f15-2in_01thumbnail.webp', label: 'Flanged Ball Valve — Series F15/F30' },
+  ],
+},
 ];
 
 /* ── Mini carousel used inside the expanded panel ── */
@@ -301,7 +304,17 @@ function BrandCard({ brand, onClick }: { brand: Brand; onClick: () => void }) {
         <span className="inline-flex items-center gap-1 mb-1.5 px-2 py-0.5 bg-green-50 text-green-700 border border-green-200 text-[10px] font-bold rounded uppercase tracking-wide w-fit">
           ✓ Authorised Distributor
         </span>
-        <h3 className="text-lg font-bold text-primary mb-1 group-hover:text-accent transition-colors">{brand.name}</h3>
+        <div className="h-16 mb-3 flex items-center">
+          <img
+            src={brand.logo}
+            alt={`${brand.name} logo`}
+            onError={(e) => {
+              console.error("Logo failed to load:", brand.logo);
+              console.log("Full attempted URL:", e.currentTarget.src);
+            }}
+            className="h-full max-w-[200px] w-auto object-contain object-left"
+          />
+        </div>
         <p className="text-accent font-semibold italic text-xs mb-4">{brand.tagline}</p>
         <div className="flex flex-wrap gap-1.5 mt-auto">
           {brand.tags.slice(0, 5).map((tag, j) => (

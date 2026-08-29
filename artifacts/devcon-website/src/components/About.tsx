@@ -105,7 +105,7 @@ export default function About() {
           >
             <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-6">
               A Legacy of Engineering{" "}
-              <span className="text-accent">Excellence</span>
+              <span className="text-[#0047AB]">Excellence</span>
             </h2>
             <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
               <p>
@@ -157,9 +157,9 @@ export default function About() {
               ].map((stat, i) => (
                 <div
                   key={i}
-                  className="bg-primary text-white p-6 rounded-lg text-center flex flex-col justify-center shadow-md hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
+                  className="bg-[#EEF1F5] text-primary p-6 rounded-lg text-center flex flex-col justify-center shadow-md border border-primary/10 hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
                 >
-                  <span className="text-3xl font-extrabold text-accent mb-1">
+                  <span className="text-3xl font-extrabold text-[#0047AB] mb-1">
                     {stat.value}
                   </span>
                   <span className="text-sm font-semibold uppercase tracking-wider">
