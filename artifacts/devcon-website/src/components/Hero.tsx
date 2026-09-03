@@ -61,7 +61,7 @@ export default function Hero() {
             </div>
 
             <h1 className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-primary leading-tight mb-5">
-              One-stop solution <span className="text-[#0047AB]">industrial automation,</span> instrumentation and fluid control.
+              One-stop solution for <span className="text-[#0047AB]">industrial automation,</span> instrumentation and fluid control.
             </h1>
 
             <p className="text-sm md:text-base font-medium text-foreground/80 max-w-xl mb-6 leading-relaxed">

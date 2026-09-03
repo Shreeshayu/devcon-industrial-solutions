@@ -13,6 +13,11 @@ import {
   Zap,
   Leaf,
   TestTube2,
+  TrainFront,
+  Microchip,
+  Truck,
+  Radio,
+  Car,
 } from "lucide-react";
 
 const industries = [
@@ -62,7 +67,7 @@ const industries = [
     name: "Electronics",
     icon: Cpu,
     color: "bg-indigo-50 text-indigo-600 border-indigo-200",
-    img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=240&fit=crop&auto=format",
+    img: "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Medical",
@@ -74,7 +79,7 @@ const industries = [
     name: "Power Generation",
     icon: Zap,
     color: "bg-amber-50 text-amber-600 border-amber-200",
-    img: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&h=240&fit=crop&auto=format",
+    img: "https://images.unsplash.com/photo-1668097613572-40b7c11c8727?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Fertilizer",
@@ -87,6 +92,36 @@ const industries = [
     icon: TestTube2,
     color: "bg-cyan-50 text-cyan-600 border-cyan-200",
     img: "https://plus.unsplash.com/premium_photo-1661956660871-2cd646709c90?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Transportation - Railways",
+    icon: TrainFront,
+    color: "bg-slate-50 text-slate-600 border-slate-200",
+    img: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=400&h=240&fit=crop&auto=format",
+  },
+  {
+    name: "Semiconductor",
+    icon: Microchip,
+    color: "bg-violet-50 text-violet-600 border-violet-200",
+    img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=240&fit=crop&auto=format",
+  },
+  {
+    name: "Earth Moving",
+    icon: Truck,
+    color: "bg-orange-50 text-orange-700 border-orange-200",
+    img: "https://images.unsplash.com/photo-1523882076-45ed041836fd?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Telecom",
+    icon: Radio,
+    color: "bg-sky-50 text-sky-600 border-sky-200",
+    img: "https://images.unsplash.com/photo-1582193607281-dafb7941640f?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Automobile",
+    icon: Car,
+    color: "bg-gray-50 text-gray-600 border-gray-200",
+    img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
